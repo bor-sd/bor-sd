@@ -1,5 +1,7 @@
 # 💫 About Me:
-Full-Stack & AI Developer<br>High-school software engineer focused on building practical AI-driven systems and scalable web applications.
+High school student combining competitive sports experience and school work with a passion for software engineering and AI development.
+On the court, I compete in structured youth basketball leagues with Košarkarski klub Ljubljana and represent my school Gimnazija Šentvid in national tournaments. Off the court, I build full-stack and AI-driven systems using Python, FastAPI, Next.js, and PostgreSQL. 
+I value disciplined execution, data-verified insights, and practical engineering solutions in both sports and work.
 
 
 ## 🌐 Socials:
