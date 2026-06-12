@@ -9,11 +9,17 @@ import { cn } from "@/lib/utils";
 
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const [progress, setProgress] = useState(0);
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 8);
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - doc.clientHeight;
+      setProgress(max > 0 ? Math.min(100, (window.scrollY / max) * 100) : 0);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -72,9 +78,9 @@ export function Nav() {
               <a
                 href={link.href}
                 className={cn(
-                  "text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent",
+                  "nav-link text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent",
                   active === link.href
-                    ? "font-medium text-ink"
+                    ? "is-active font-medium text-ink"
                     : "text-muted hover:text-ink"
                 )}
               >
@@ -92,6 +98,11 @@ export function Nav() {
           <Menu className="h-6 w-6" />
         </button>
         </nav>
+        <div
+          aria-hidden
+          className="absolute bottom-0 left-0 h-[2px] bg-accent"
+          style={{ width: `${progress}%` }}
+        />
       </header>
       {open ? <MobileMenu active={active} onClose={() => setOpen(false)} /> : null}
     </>

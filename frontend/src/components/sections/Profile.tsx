@@ -18,7 +18,7 @@ export function Profile() {
           <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-faint">
             How I work
           </h3>
-          <ul className="mt-5 grid gap-x-10 gap-y-5 md:grid-cols-2">
+          <ul className="stagger mt-5 grid gap-x-10 gap-y-5 md:grid-cols-2">
             {profile.traits.map((trait) => (
               <li key={trait.name} className="flex gap-3">
                 <span
@@ -37,7 +37,7 @@ export function Profile() {
           <h3 className="mt-14 font-mono text-xs uppercase tracking-[0.18em] text-faint">
             What fills the week
           </h3>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="stagger mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {profile.hobbies.map((hobby) => (
               <div key={hobby.name} className="rounded-lg border border-line bg-surface p-5">
                 <p className="text-sm font-medium">{hobby.name}</p>
@@ -49,7 +49,7 @@ export function Profile() {
           <h3 className="mt-14 font-mono text-xs uppercase tracking-[0.18em] text-faint">
             Things I rate
           </h3>
-          <div className="mt-5 grid gap-4 md:grid-cols-3">
+          <div className="stagger mt-5 grid gap-4 md:grid-cols-3">
             {profile.shelf.map((group) => (
               <div
                 key={group.category}

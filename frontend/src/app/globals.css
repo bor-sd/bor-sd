@@ -61,10 +61,78 @@ section[id] {
   transform: none;
 }
 
+/*
+  Staggered children — put class="stagger" on a grid/list INSIDE a Reveal;
+  items cascade in one by one once the section scrolls into view.
+*/
+.stagger > * {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+}
+
+.is-visible .stagger > * {
+  opacity: 1;
+  transform: none;
+}
+
+.is-visible .stagger > *:nth-child(2) { transition-delay: 60ms; }
+.is-visible .stagger > *:nth-child(3) { transition-delay: 120ms; }
+.is-visible .stagger > *:nth-child(4) { transition-delay: 180ms; }
+.is-visible .stagger > *:nth-child(5) { transition-delay: 240ms; }
+.is-visible .stagger > *:nth-child(6) { transition-delay: 300ms; }
+.is-visible .stagger > *:nth-child(7) { transition-delay: 360ms; }
+.is-visible .stagger > *:nth-child(8) { transition-delay: 420ms; }
+.is-visible .stagger > *:nth-child(n + 9) { transition-delay: 480ms; }
+
+/* Nav links — accent underline sweeps in on hover and on the active section */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  background: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after,
+.nav-link.is-active::after {
+  transform: scaleX(1);
+}
+
+/* Logo — the accent dot grows when the mark is hovered */
+.logo-dot {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+a:hover .logo-dot,
+a:focus-visible .logo-dot {
+  transform: scale(1.4);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .reveal {
+  .reveal,
+  .stagger > * {
     opacity: 1;
     transform: none;
+    transition: none;
+  }
+
+  .nav-link::after,
+  .logo-dot {
     transition: none;
   }
 }

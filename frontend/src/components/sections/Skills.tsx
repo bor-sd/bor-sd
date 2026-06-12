@@ -15,7 +15,7 @@ export function Skills() {
             title="What I work with"
             intro="The day-to-day toolkit — Python and TypeScript first, the rest as the job demands."
           />
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div className="stagger grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {skillGroups.map((group) => (
               <div key={group.title} className="rounded-lg border border-line bg-paper p-6">
                 <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-faint">

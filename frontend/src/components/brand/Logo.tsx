@@ -22,7 +22,7 @@ export function LogoMark({ className }: { className?: string }) {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <circle cx="27.5" cy="25.5" r="2.75" fill="var(--color-accent)" />
+      <circle className="logo-dot" cx="27.5" cy="25.5" r="2.75" fill="var(--color-accent)" />
     </svg>
   );
 }

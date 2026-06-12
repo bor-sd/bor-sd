@@ -12,10 +12,12 @@ export function JsonLd() {
       "@type": "Organization",
       name: "Neoproject d.o.o.",
     },
-    alumniOf: {
-      "@type": "EducationalOrganization",
-      name: "Gimnazija Šentvid",
-    },
+    alumniOf: [
+      { "@type": "EducationalOrganization", name: "Gimnazija Šentvid" },
+      { "@type": "EducationalOrganization", name: "Osnovna šola Medvode" },
+    ],
+    knowsLanguage: ["sl", "en", "de", "hr"],
+    award: "3rd place, Slovenian national primary-school programming competition (8th grade)",
     knowsAbout: [
       "Full-stack development",
       "Agentic AI development",

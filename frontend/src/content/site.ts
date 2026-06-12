@@ -20,7 +20,7 @@ export const site = {
   tagline:
     "Software engineer & student in Ljubljana — building full-stack and AI-driven systems.",
   description:
-    "Bor Skale Demšar is a software engineer at Neoproject and final-year student at Gimnazija Šentvid in Ljubljana, Slovenia — building full-stack and AI-driven systems with Python, FastAPI, Next.js and PostgreSQL.",
+    "Bor Skale Demšar is a software engineer at Neoproject in Ljubljana — finishing Gimnazija Šentvid, starting at FRI (Faculty of Computer and Information Science, University of Ljubljana) in fall 2026, and building full-stack and AI-driven systems with Python, FastAPI, Next.js and PostgreSQL.",
   // TODO: switch to your custom domain if you buy one later
   url: "https://bor-sd.vercel.app",
 };
@@ -31,7 +31,7 @@ export const hero = {
   greeting: "Hi, I'm Bor.",
   headline: "I build full-stack and AI-driven systems.",
   subhead:
-    "Software engineer at Neoproject in Ljubljana and final-year student at Gimnazija Šentvid. Two years of production work across agentic AI, Python back ends and Next.js front ends — plus a life away from the editor that keeps me sharp.",
+    "Software engineer at Neoproject in Ljubljana, finishing up at Gimnazija Šentvid, and FRI-bound this fall. Two years of production work across agentic AI, Python back ends and Next.js front ends — plus a life away from the editor that keeps me sharp.",
   // TODO: drop a square portrait at frontend/public/me.jpg and set this to "/me.jpg"
   photo: null as string | null,
   ctas: [
@@ -44,15 +44,18 @@ export const hero = {
 
 export const about = {
   paragraphs: [
-    "I'm a software engineer from Ljubljana, currently at Neoproject d.o.o. and finishing my final year at Gimnazija Šentvid. I've been shipping production software since 2024 — first freelance, then ten months building an AI product at HolyShift, now full-stack client work at Neoproject.",
+    "I'm a software engineer from Ljubljana, currently at Neoproject d.o.o. I've been shipping production software since 2024 — first freelance, then ten months building an AI product at HolyShift, now full-stack client work at Neoproject.",
     "My lane is full-stack and AI-driven systems: agentic AI development, Python and FastAPI back ends, Next.js and TypeScript front ends, PostgreSQL underneath. I like software that is typed, measured and actually deployed — not demos.",
+    "I grew up in Medvode — the town between the Sava and Sora rivers just outside Ljubljana — and I'm now closing out my final year at Gimnazija Šentvid, the same school whose jersey I wear in national basketball tournaments. This fall I'm moving on to FRI, the University of Ljubljana's Faculty of Computer and Information Science.",
     "Away from the keyboard I play competitive basketball, run, lift, ski and shoot photos — the full picture is further down the page.",
   ],
   facts: [
     { label: "Role", value: "Software Engineer · Neoproject" },
     { label: "School", value: "Gimnazija Šentvid, class of 2026" },
+    { label: "Next", value: "FRI · Univ. of Ljubljana, fall 2026" },
     { label: "Based in", value: "Medvode · Ljubljana" },
     { label: "Focus", value: "Full-stack & agentic AI" },
+    { label: "Languages", value: "SL · EN (C1) · DE (B1) · HR/SR" },
   ],
 };
 
@@ -65,11 +68,11 @@ export const now = {
   items: [
     {
       label: "Working on",
-      text: "Client projects at Neoproject — and finishing gimnazija on the side.",
+      text: "Client projects at Neoproject — and the matura exams that close out Gimnazija Šentvid.",
     },
     {
       label: "Learning",
-      text: "TODO — what you're currently digging into (e.g. agent architectures, system design).",
+      text: "Wrapping my final year at ZRI — aged out after seven years of Pascal and C++.",
     },
     {
       label: "Training for",
@@ -84,19 +87,34 @@ export type JourneyItem = { year: string; title: string; text: string };
 
 export const journey: JourneyItem[] = [
   {
+    year: "2013",
+    title: "OŠ Medvode",
+    text: "Started primary school in Medvode — the town between the Sava and Sora rivers, just outside Ljubljana, that I still call home.",
+  },
+  {
     year: "2014",
     title: "First basketball practice",
-    text: "Joined organised training in primary school — KK Ljubljana became the second home it still is.",
+    text: "Joined KK Medvode, the hometown club where I'd spend the next nine seasons learning the game.",
   },
   {
     year: "2019",
-    title: "First lines of code",
-    text: "Wrote my first programs and discovered that building things beats consuming them.",
+    title: "First lines of code · ZRI",
+    text: "Enrolled at ZRI, Ljubljana's youth programming school with decades of tradition — started in Pascal, graduated to C++, and kept at it every year since.",
+  },
+  {
+    year: "2021",
+    title: "Competition season",
+    text: "Finished primary school with national-competition awards in maths, chemistry and geography — and 3rd place in Slovenia in programming in 8th grade.",
   },
   {
     year: "2022",
     title: "Gimnazija Šentvid",
-    text: "Started gimnazija in Ljubljana — class of 2026 — and with it the juggling act between school, training and a growing list of side projects.",
+    text: "Started gimnazija in Ljubljana — class of 2026 — and was soon wearing the school's colours in national basketball tournaments.",
+  },
+  {
+    year: "2023",
+    title: "KK Ljubljana",
+    text: "Moved from KK Medvode to Košarkarski klub Ljubljana — a bigger club, a faster game.",
   },
   {
     year: "2024",
@@ -111,7 +129,12 @@ export const journey: JourneyItem[] = [
   {
     year: "2026",
     title: "Software Engineer · Neoproject",
-    text: "Joined Neoproject d.o.o. in Ljubljana, shipping full-stack and AI work — while closing out my final year of school.",
+    text: "Joined Neoproject d.o.o. in Ljubljana, shipping full-stack and AI work — while closing out school and my final, age-capped season at ZRI.",
+  },
+  {
+    year: "Fall 2026",
+    title: "FRI · University of Ljubljana",
+    text: "Starting at FRI — the University of Ljubljana's Faculty of Computer and Information Science — to put formal CS depth under two years of production experience.",
   },
 ];
 
@@ -223,11 +246,11 @@ export const profile = {
     },
   ],
   hobbies: [
-    { name: "Basketball", note: "KK Ljubljana — the serious one" },
-    { name: "Running", note: "Kilometres to clear the head" },
+    { name: "Basketball", note: "U20 with KK Ljubljana — the serious one" },
+    { name: "Running", note: "10k road runs and trails around Medvode" },
     { name: "Gym & fitness", note: "The strength behind the sport" },
-    { name: "Photography", note: "The eye behind the gallery below" },
-    { name: "Skiing & mountains", note: "Slovenia's backyard, used properly" },
+    { name: "Photography", note: "Landscapes, streets and friends — see the gallery below" },
+    { name: "Skiing & mountains", note: "On skis since childhood; Triglav climbed" },
     { name: "Tech", note: "Hardware, tools, whatever's new" },
   ],
   // TODO — MOCK PICKS so you can judge the layout. Replace every item with
@@ -252,18 +275,22 @@ export const profile = {
 
 export const basketball = {
   paragraphs: [
-    "Basketball has been part of my life since 2014 — longer than code. I train and compete with Košarkarski klub Ljubljana in structured youth leagues, and represent Gimnazija Šentvid in national school tournaments.",
+    "Basketball has been part of my life since 2014 — longer than code. I learned the game at KK Medvode, my hometown club, and since 2023 I've trained and competed with Košarkarski klub Ljubljana, where our U20 squad plays in the 1.A SKL — Slovenia's top league for the age group. On top of club ball, I represent Gimnazija Šentvid in national school tournaments.",
+    "Club and school overlap in the best way: league games with KK Ljubljana, national school tournaments in Šentvid colours — and in a matura year, a calendar that only works if you're seriously organised. That balancing act comes with me to FRI this fall.",
     "The court taught me things a terminal can't: showing up on the days you don't feel like it, trusting your teammates, reading a fast situation and making the call anyway. I bring the same discipline to every project I ship.",
   ],
   facts: [
     { label: "Club", value: "KK Ljubljana" },
+    { label: "Jersey", value: "#0" },
+    { label: "Position", value: "Wing" },
+    { label: "Previously", value: "KK Medvode · 2014–2023" },
     { label: "School team", value: "Gimnazija Šentvid" },
-    { label: "Playing since", value: "2014" },
+    { label: "League", value: "U20 1.A SKL" },
   ],
-  // TODO: real highlights — tournament runs, season results, personal bests
   highlights: [
-    "TODO — a season or tournament highlight",
-    "TODO — another moment worth bragging about",
+    "Climbed with the team from the 1.B SKL through the qualifiers into the U20 1.A SKL — the country's top under-20 division",
+    "12.3 points per game across the U20 qualification round",
+    "National school tournaments in Gimnazija Šentvid colours",
   ],
 };
 

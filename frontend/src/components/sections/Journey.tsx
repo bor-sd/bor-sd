@@ -16,7 +16,7 @@ export function Journey() {
             title="How I got here"
             intro="School, work and sport in one timeline — from a primary-school gym to production AI systems."
           />
-          <ol className="relative space-y-10 border-l border-line pl-8">
+          <ol className="stagger relative space-y-10 border-l border-line pl-8">
             {journey.map((item) => (
               <li key={item.title} className="relative">
                 <span

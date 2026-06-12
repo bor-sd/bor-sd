@@ -9,26 +9,28 @@ export function Hero() {
     <section className="flex min-h-dvh items-center pt-16">
       <Container className="grid w-full items-center gap-12 py-16 lg:grid-cols-[1.4fr_1fr]">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.18em] text-accent">
-            {site.location}
-          </p>
-          <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-            {hero.greeting}
-            <span className="mt-2 block text-muted">{hero.headline}</span>
-          </h1>
-          <p className="mt-7 max-w-xl text-base leading-relaxed text-muted md:text-lg">
-            {hero.subhead}
-          </p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            {hero.ctas.map((cta) => (
-              <Button
-                key={cta.href}
-                href={cta.href}
-                variant={cta.primary ? "solid" : "outline"}
-              >
-                {cta.label}
-              </Button>
-            ))}
+          <div className="stagger">
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-accent">
+              {site.location}
+            </p>
+            <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+              {hero.greeting}
+              <span className="mt-2 block text-muted">{hero.headline}</span>
+            </h1>
+            <p className="mt-7 max-w-xl text-base leading-relaxed text-muted md:text-lg">
+              {hero.subhead}
+            </p>
+            <div className="mt-9 flex flex-wrap gap-3">
+              {hero.ctas.map((cta) => (
+                <Button
+                  key={cta.href}
+                  href={cta.href}
+                  variant={cta.primary ? "solid" : "outline"}
+                >
+                  {cta.label}
+                </Button>
+              ))}
+            </div>
           </div>
         </Reveal>
         <Reveal delay={150}>
