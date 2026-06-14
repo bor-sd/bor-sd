@@ -47,7 +47,7 @@ export function Profile() {
           </div>
 
           <h3 className="mt-14 font-mono text-xs uppercase tracking-[0.18em] text-faint">
-            Things I rate
+            Things I rate and use
           </h3>
           <div className="stagger mt-5 grid gap-4 md:grid-cols-3">
             {profile.shelf.map((group) => (

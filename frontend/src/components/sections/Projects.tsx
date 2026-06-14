@@ -11,7 +11,7 @@ const linkClass =
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="flex flex-col rounded-lg border border-line bg-surface p-6 transition-colors hover:border-faint md:p-7">
+    <article className="flex flex-col rounded-lg border border-line bg-paper p-6 transition-colors hover:border-faint md:p-7">
       <div className="flex items-start justify-between gap-4">
         <h3 className="text-lg font-semibold">{project.title}</h3>
         <span className="mt-1 flex shrink-0 gap-3 font-mono text-[0.65rem] uppercase tracking-[0.18em]">
@@ -19,6 +19,18 @@ function ProjectCard({ project }: { project: Project }) {
           <span className="text-faint">{project.kind}</span>
         </span>
       </div>
+      {project.wip ? (
+        <span className="mt-3 inline-flex w-fit items-center gap-1.5 rounded-full border border-accent/40 bg-accent/5 px-2.5 py-1 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-accent-strong">
+          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" aria-hidden />
+          Work in progress
+        </span>
+      ) : null}
+      {project.maintenance ? (
+        <span className="mt-3 inline-flex w-fit items-center gap-1.5 rounded-full border border-faint/50 bg-surface-2 px-2.5 py-1 font-mono text-[0.62rem] uppercase tracking-[0.18em] text-muted">
+          <span className="h-1.5 w-1.5 rounded-full bg-faint" aria-hidden />
+          Currently in maintenance
+        </span>
+      ) : null}
       <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">
         {project.description}
       </p>
@@ -59,11 +71,11 @@ function ProjectCard({ project }: { project: Project }) {
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 md:py-28">
+    <section id="projects" className="border-y border-line bg-surface py-24 md:py-28">
       <Container>
         <Reveal>
           <SectionHead
-            number="03"
+            number="02"
             kicker="projects"
             title="Things I've built"
             intro="Real systems, not tutorials — full-stack apps with proper architecture, from database to deploy."

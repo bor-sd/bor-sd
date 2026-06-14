@@ -7,11 +7,11 @@ import { journey, resumeUrl } from "@/content/site";
 
 export function Journey() {
   return (
-    <section id="journey" className="border-y border-line bg-surface py-24 md:py-28">
+    <section id="journey" className="py-24 md:py-28">
       <Container>
         <Reveal>
           <SectionHead
-            number="02"
+            number="03"
             kicker="journey"
             title="How I got here"
             intro="School, work and sport in one timeline — from a primary-school gym to production AI systems."

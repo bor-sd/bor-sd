@@ -18,20 +18,20 @@ export const site = {
   location: "Ljubljana, Slovenia",
   email: "bor.skale.demsar@gmail.com",
   tagline:
-    "Software engineer & student in Ljubljana — building full-stack and AI-driven systems.",
+    "Software engineer and student in Ljubljana. I build full-stack and AI apps.",
   description:
-    "Bor Skale Demšar is a software engineer at Neoproject in Ljubljana — finishing Gimnazija Šentvid, starting at FRI (Faculty of Computer and Information Science, University of Ljubljana) in fall 2026, and building full-stack and AI-driven systems with Python, FastAPI, Next.js and PostgreSQL.",
-  // TODO: switch to your custom domain if you buy one later
-  url: "https://bor-sd.vercel.app",
+    "Bor Skale Demšar — software engineer at Neoproject in Ljubljana. I build full-stack and AI apps with Python, FastAPI, Next.js and PostgreSQL. Finishing Gimnazija Šentvid, starting at FRI (University of Ljubljana) in fall 2026.",
+  // Canonical URL — the repo's live Vercel deployment. Swap to a custom domain later.
+  url: "https://borskaledemsar.vercel.app",
 };
 
 /* ---------------------------------- Hero ----------------------------------- */
 
 export const hero = {
   greeting: "Hi, I'm Bor.",
-  headline: "I build full-stack and AI-driven systems.",
+  headline: "I build full-stack and AI apps.",
   subhead:
-    "Software engineer at Neoproject in Ljubljana, finishing up at Gimnazija Šentvid, and FRI-bound this fall. Two years of production work across agentic AI, Python back ends and Next.js front ends — plus a life away from the editor that keeps me sharp.",
+    "I'm a software engineer at Neoproject in Ljubljana. I'm also finishing high school at Gimnazija Šentvid, and I start at FRI this autumn. I've been building real software for about two years — mostly AI stuff, Python backends and Next.js frontends. When I'm not coding I'm usually playing basketball or somewhere outside.",
   // TODO: drop a square portrait at frontend/public/me.jpg and set this to "/me.jpg"
   photo: null as string | null,
   ctas: [
@@ -44,13 +44,14 @@ export const hero = {
 
 export const about = {
   paragraphs: [
-    "I'm a software engineer from Ljubljana, currently at Neoproject d.o.o. I've been shipping production software since 2024 — first freelance, then ten months building an AI product at HolyShift, now full-stack client work at Neoproject.",
-    "My lane is full-stack and AI-driven systems: agentic AI development, Python and FastAPI back ends, Next.js and TypeScript front ends, PostgreSQL underneath. I like software that is typed, measured and actually deployed — not demos.",
-    "I grew up in Medvode — the town between the Sava and Sora rivers just outside Ljubljana — and I'm now closing out my final year at Gimnazija Šentvid, the same school whose jersey I wear in national basketball tournaments. This fall I'm moving on to FRI, the University of Ljubljana's Faculty of Computer and Information Science.",
-    "Away from the keyboard I play competitive basketball, run, lift, ski and shoot photos — the full picture is further down the page.",
+    "I'm a software engineer from Ljubljana. I've been getting paid to build software since 2024 — I started out freelancing, then spent about ten months at HolyShift, and now I'm at Neoproject building AI platforms and internal tools. That's my main focus; I also help out with some Odoo work at Hermes when they need it.",
+    "Most of what I do is full-stack and AI: building agents, Python and FastAPI on the backend, Next.js and TypeScript on the frontend, Postgres underneath. I mostly care about shipping things that actually work, not just demos.",
+    "I grew up in Medvode, just outside Ljubljana, and I'm finishing my last year at Gimnazija Šentvid right now. This autumn I'm starting at FRI, the computer science faculty at the University of Ljubljana.",
+    "Outside of code I play basketball, run, lift, ski and take photos. There's more on all of that further down.",
   ],
   facts: [
     { label: "Role", value: "Software Engineer · Neoproject" },
+    { label: "Also", value: "Odoo · Hermes (hbs.si)" },
     { label: "School", value: "Gimnazija Šentvid, class of 2026" },
     { label: "Next", value: "FRI · Univ. of Ljubljana, fall 2026" },
     { label: "Based in", value: "Medvode · Ljubljana" },
@@ -68,15 +69,15 @@ export const now = {
   items: [
     {
       label: "Working on",
-      text: "Client projects at Neoproject — and the matura exams that close out Gimnazija Šentvid.",
+      text: "Mostly building AI products at Neoproject — plus the odd Odoo task for Hermes when they need a hand. When inspiration strikes, I also work on personal projects.",
     },
     {
       label: "Learning",
-      text: "Wrapping my final year at ZRI — aged out after seven years of Pascal and C++.",
+      text: "Finishing up at ZRI after seven years — I've basically aged out. Started on Pascal, moved to C++.",
     },
     {
       label: "Training for",
-      text: "TODO — what's next on the court or the road (e.g. the autumn season, a 10k).",
+      text: "Lots of runs, gym sessions with friends, and a few hikes and trails in the mountains around home during the basketball off-season.",
     },
   ],
 };
@@ -89,52 +90,52 @@ export const journey: JourneyItem[] = [
   {
     year: "2013",
     title: "OŠ Medvode",
-    text: "Started primary school in Medvode — the town between the Sava and Sora rivers, just outside Ljubljana, that I still call home.",
+    text: "Started primary school in Medvode, just outside Ljubljana — still home.",
   },
   {
     year: "2014",
     title: "First basketball practice",
-    text: "Joined KK Medvode, the hometown club where I'd spend the next nine seasons learning the game.",
+    text: "Started playing at KK Medvode, my local club. Stuck with it for the next nine years.",
   },
   {
     year: "2019",
     title: "First lines of code · ZRI",
-    text: "Enrolled at ZRI, Ljubljana's youth programming school with decades of tradition — started in Pascal, graduated to C++, and kept at it every year since.",
+    text: "Started learning to code at ZRI, a programming school for kids in Ljubljana. Began with Pascal, then moved to C++.",
   },
   {
     year: "2021",
-    title: "Competition season",
-    text: "Finished primary school with national-competition awards in maths, chemistry and geography — and 3rd place in Slovenia in programming in 8th grade.",
+    title: "Competitions",
+    text: "Finished primary school with some national competition results in maths, chemistry and geography — and 3rd in the country in programming in 8th grade.",
   },
   {
     year: "2022",
     title: "Gimnazija Šentvid",
-    text: "Started gimnazija in Ljubljana — class of 2026 — and was soon wearing the school's colours in national basketball tournaments.",
+    text: "Started high school at Gimnazija Šentvid (class of 2026) and started playing for the school team in national tournaments.",
   },
   {
     year: "2023",
     title: "KK Ljubljana",
-    text: "Moved from KK Medvode to Košarkarski klub Ljubljana — a bigger club, a faster game.",
+    text: "Switched from KK Medvode to KK Ljubljana — a bigger club and a higher level.",
   },
   {
     year: "2024",
-    title: "Code turns professional",
-    text: "Took on freelance software work — real clients, real deadlines, real production bugs.",
+    title: "Started getting paid to code",
+    text: "Picked up freelance dev work — first real clients and deadlines.",
   },
   {
     year: "2025",
     title: "Software Engineer · HolyShift",
-    text: "Ten months building an AI platform that validates product ideas against real buyer signals — my first deep run at agentic AI in production.",
+    text: "Spent about ten months at HolyShift building an AI platform that checks product ideas against real buyer signals. First time doing agentic AI properly in production.",
   },
   {
     year: "2026",
     title: "Software Engineer · Neoproject",
-    text: "Joined Neoproject d.o.o. in Ljubljana, shipping full-stack and AI work — while closing out school and my final, age-capped season at ZRI.",
+    text: "Joined Neoproject in Ljubljana, working on full-stack and AI projects — while finishing school and my last season at ZRI.",
   },
   {
     year: "Fall 2026",
     title: "FRI · University of Ljubljana",
-    text: "Starting at FRI — the University of Ljubljana's Faculty of Computer and Information Science — to put formal CS depth under two years of production experience.",
+    text: "Starting at FRI, the CS faculty at the University of Ljubljana, to get the formal computer science side down after two years of building things.",
   },
 ];
 
@@ -151,43 +152,64 @@ export type Project = {
   liveUrl?: string;
   repoUrl?: string;
   featured?: boolean;
+  wip?: boolean;
+  maintenance?: boolean;
 };
 
-// TODO: these are templates seeded from your LinkedIn + GitHub — sharpen the
-// descriptions with specifics (what exactly you built) when you get a minute.
+// Descriptions are drawn from the real repos/products. Most code is private,
+// so cards only link out where something is publicly live (liveUrl).
 export const projects: Project[] = [
   {
     title: "HolyShift — AI validation platform",
     description:
-      "Part of the product team behind HolyShift, an AI platform that validates product ideas by listening to real buyer signals. I worked across the stack — agentic pipelines, Python services and the Next.js front end. (TODO: swap in one or two specific features you shipped.)",
+      "I spent about ten months on the team building HolyShift, an AI platform that checks product ideas against real buyer signals. I worked across the whole stack — the agent pipelines, the Python services and the Next.js frontend.",
     tags: ["Agentic AI", "Python", "FastAPI", "Next.js"],
     kind: "team",
     liveUrl: "https://www.holyshift.ai",
     featured: true,
   },
   {
-    title: "Goslarstvo Demšar — workshop website",
+    title: "BizMatch AI — procurement automation",
     description:
-      "My family runs a third-generation violin workshop in Ljubljana, and I'm rebuilding its web presence — from a legacy Joomla site to a bilingual Next.js app with a Sanity CMS, custom design system and Supabase-backed enquiry forms.",
-    tags: ["Next.js", "TypeScript", "Sanity", "Supabase"],
-    kind: "solo",
-    // TODO: add live + repo links once it ships
+      "Built this at Neoproject. It takes software procurement from a rough idea to a finished RFI document: an AI interview works out what you need, agents research vendors in parallel, and it generates the RFI PDF at the end.",
+    tags: ["LangGraph", "FastAPI", "Next.js", "pgvector"],
+    kind: "team",
+    liveUrl: "https://bizmatch.pro",
     featured: true,
   },
   {
-    title: "Project Trainer",
+    title: "Stryde — AI activity renamer for Strava",
     description:
-      "A TypeScript training app. (TODO: one-liner on what it does — what it tracks, who it's for, and why you built it.)",
-    tags: ["TypeScript", "Web"],
+      "A side project of mine. You connect your Strava and it renames your activities for you — an AI pipeline writes the names from your route, where you went and how you did.",
+    tags: ["Next.js", "FastAPI", "LangGraph", "PostgreSQL"],
     kind: "solo",
-    repoUrl: "https://github.com/bor-sd/project_trainer",
+    featured: true,
+    maintenance: true,
   },
   {
-    title: "Client work · Neoproject",
+    title: "AI Prompt Vault",
     description:
-      "Day-job engineering at Neoproject d.o.o. — full-stack client projects in production. (TODO: feature a project you're allowed to show, or remove this card.)",
-    tags: ["Python", "Next.js", "PostgreSQL"],
+      "A full app for saving and organising AI prompts — categories, tags, favourites and search. It also has a generator that builds prompts using known frameworks (CO-STAR, RISEN, CRAFT), scores them and helps you improve them.",
+    tags: ["Next.js", "FastAPI", "LangGraph", "PostgreSQL"],
+    kind: "solo",
+    liveUrl: "https://vault.stryde-ai.com",
+  },
+  {
+    title: "Goslarstvo Demšar — workshop website",
+    description:
+      "Work in progress. My family has run a violin workshop in Ljubljana for three generations, and I'm rebuilding their website — moving it off an old Joomla site to a bilingual Next.js app with a CMS and contact forms.",
+    tags: ["Next.js", "TypeScript", "Sanity", "Supabase"],
+    kind: "solo",
+    wip: true,
+    liveUrl: "https://goslarstvo-demsar-website.vercel.app",
+  },
+  {
+    title: "Odoo ERP — Hermes",
+    description:
+      "I help out at Hermes (hbs.si) when they need it — they're the biggest Odoo partner in Slovenia. I build custom Odoo modules and features on top of Odoo for their clients.",
+    tags: ["Odoo", "Python", "ERP"],
     kind: "team",
+    liveUrl: "https://www.hbs.si/en_US",
   },
 ];
 
@@ -200,11 +222,11 @@ export const skillGroups: { title: string; items: string[] }[] = [
   },
   {
     title: "AI & agents",
-    items: ["Agentic AI development", "LLM integrations", "AI-driven products"],
+    items: ["Automatization", "AI Agents", "LangGraph", "LLM integrations", "AI-driven products"],
   },
   {
     title: "Frameworks",
-    items: ["FastAPI", "Next.js", "React", "Django", "Flask"],
+    items: ["Odoo","FastAPI", "Next.js", "React", "Django", "Flask"],
   },
   {
     title: "Data, infra & tooling",
@@ -226,47 +248,58 @@ export const profile = {
   traits: [
     {
       name: "Disciplined & consistent",
-      note: "Training-schedule reliability — shows up daily, on the court and in the repo.",
+      note: "I show up and put in the work, whether it's training or a project.",
     },
     {
       name: "Competitive & driven",
-      note: "Keeps score, sets goals, chases them down.",
+      note: "I like winning, and I set goals and actually chase them.",
     },
     {
       name: "Analytical & data-minded",
-      note: "Evidence over vibes — measure first, decide second.",
+      note: "I'd rather look at the data than guess.",
     },
     {
-      name: "Team player & communicator",
-      note: "Locker rooms and stand-ups run on the same skills.",
+      name: "Team player",
+      note: "I work well with people — sport and dev both need it.",
     },
     {
       name: "Perfectionist",
-      note: "Details get sweated — “good enough” rarely is.",
+      note: "Unfinished work frustrates me — “good enough” is rarely good enough.",
     },
   ],
   hobbies: [
-    { name: "Basketball", note: "U20 with KK Ljubljana — the serious one" },
-    { name: "Running", note: "10k road runs and trails around Medvode" },
-    { name: "Gym & fitness", note: "The strength behind the sport" },
-    { name: "Photography", note: "Landscapes, streets and friends — see the gallery below" },
-    { name: "Skiing & mountains", note: "On skis since childhood; Triglav climbed" },
-    { name: "Tech", note: "Hardware, tools, whatever's new" },
+    { name: "Basketball", note: "Training and games, up to 12 hours a week" },
+    { name: "Running", note: "10k road runs and trails around home" },
+    { name: "Gym & fitness", note: "Lifting, usually with friends" },
+    { name: "Photography", note: "Landscapes, streets and friends, all on my iPhone — see the gallery below" },
+    { name: "Skiing & mountains", note: "On skis since I was a kid; climbed Triglav" },
+    { name: "Tech", note: "Hardware, tools, whatever's new gets my attention" },
   ],
-  // TODO — MOCK PICKS so you can judge the layout. Replace every item with
-  // your real favourites before deploy.
+  // Things I actually use and like.
   shelf: [
     {
-      category: "Podcasts & YouTube",
-      items: ["Lex Fridman Podcast", "Fireship", "ThePrimeagen"],
+      category: "Podcasts",
+      items: ["Waveform podcast", "Hardfork", "Mind the game", "The Deep 3 podcast"],
+    },
+    {
+      category: "YouTube",
+      items: ["MKBHD", "Veritasium", "The Odd1s Out", "Mark Rober"],
     },
     {
       category: "Music",
-      items: ["Travis Scott", "Fred again..", "Hans Zimmer for focus"],
+      items: ["Eminem", "J. Cole", "JID", "Kendrick Lamar", "Central Cee"],
     },
     {
-      category: "Gear & tools",
-      items: ["VS Code + Claude Code", "Custom 75% keyboard", "Garmin watch"],
+      category: "Gear",
+      items: ["Custom 75% keyboard", "Suunto watch", "Logitech MX Master 3", "Airpods Pro 2"],
+    },
+    {
+      category: "Tools",
+      items: ["VS Code + Claude Code", "Zen browser", "Docker", "Discord", "Localsend"],
+    },
+    {
+      category: "Brands",
+      items: ["Nike", "Adidas", "Apple", "ASUS", "Brooks"],
     },
   ],
 };
@@ -275,22 +308,20 @@ export const profile = {
 
 export const basketball = {
   paragraphs: [
-    "Basketball has been part of my life since 2014 — longer than code. I learned the game at KK Medvode, my hometown club, and since 2023 I've trained and competed with Košarkarski klub Ljubljana, where our U20 squad plays in the 1.A SKL — Slovenia's top league for the age group. On top of club ball, I represent Gimnazija Šentvid in national school tournaments.",
-    "Club and school overlap in the best way: league games with KK Ljubljana, national school tournaments in Šentvid colours — and in a matura year, a calendar that only works if you're seriously organised. That balancing act comes with me to FRI this fall.",
-    "The court taught me things a terminal can't: showing up on the days you don't feel like it, trusting your teammates, reading a fast situation and making the call anyway. I bring the same discipline to every project I ship.",
+    "I've been playing basketball since 2014. I started at KK Medvode and since 2023 I've played for KK Ljubljana in the top league for my age. On top of club ball, I play for Gimnazija Šentvid in national school tournaments.",
+    "Juggling club basketball, the school team and a matura year takes a lot of planning. I'll be taking that same balancing act with me to FRI this autumn.",
+    "Sport has taught me a lot that helps with work too — showing up when you don't feel like it, trusting your team and making quick calls under pressure. I bring that into the things I build.",
   ],
   facts: [
     { label: "Club", value: "KK Ljubljana" },
-    { label: "Jersey", value: "#0" },
+    { label: "Jersey", value: "#24" },
     { label: "Position", value: "Wing" },
     { label: "Previously", value: "KK Medvode · 2014–2023" },
     { label: "School team", value: "Gimnazija Šentvid" },
-    { label: "League", value: "U20 1.A SKL" },
   ],
   highlights: [
-    "Climbed with the team from the 1.B SKL through the qualifiers into the U20 1.A SKL — the country's top under-20 division",
-    "12.3 points per game across the U20 qualification round",
-    "National school tournaments in Gimnazija Šentvid colours",
+    "Got to quarterfinals a few times over the last few years, but never managed to snag a medal — the competition is tough.",
+    "National champ with the school team in 2025 and 3x3 national champ in 2026."
   ],
 };
 
@@ -315,7 +346,7 @@ export const gallery: GalleryItem[] = [
 
 export const contact = {
   heading: "Say hi.",
-  text: "Whether it's a project, a question, an opportunity, or just basketball talk — my inbox is open. No forms, no funnels; it lands straight in my mail.",
+  text: "Got a project, a question, an opportunity, or just want to talk basketball? Send me a message — no forms, it goes straight to my email.",
 };
 
 export type Social = {
@@ -343,8 +374,8 @@ export const socials: Social[] = [
 
 export const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Journey", href: "#journey" },
   { label: "Projects", href: "#projects" },
+  { label: "Journey", href: "#journey" },
   { label: "Skills", href: "#skills" },
   { label: "Profile", href: "#profile" },
   { label: "Court", href: "#court" },
