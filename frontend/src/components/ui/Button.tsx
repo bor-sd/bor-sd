@@ -14,7 +14,7 @@ export function Button({ href, variant = "solid", external, className, children 
       href={href}
       {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={cn(
-        "inline-flex items-center gap-2 rounded px-5 py-2.5 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
+        "inline-flex items-center gap-2 rounded px-5 py-2.5 text-sm font-medium transition-[color,background-color,border-color,transform] duration-150 active:translate-y-px focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent",
         variant === "solid"
           ? "bg-accent-strong text-white hover:bg-accent"
           : "border border-ink text-ink hover:bg-ink hover:text-paper",

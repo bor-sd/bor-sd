@@ -10,7 +10,8 @@
   --color-surface-2: #f2f0ec;
   --color-ink: #1a1a18;
   --color-muted: #6b6b66;
-  --color-faint: #9b9b94;
+  /* darkened from #9b9b94 so small labels clear WCAG AA (4.5:1) on paper */
+  --color-faint: #73736b;
   --color-line: #e7e4de;
   --color-accent: #d6552b;
   --color-accent-strong: #b8431f;
@@ -40,6 +41,21 @@ body {
 /* Keep anchored headings clear of the fixed nav */
 section[id] {
   scroll-margin-top: 5rem;
+}
+
+/*
+  Subtle paper grain — a fixed, non-interactive overlay that reinforces the
+  warm-paper concept and adds depth. Stays put while the page scrolls.
+*/
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 140px 140px;
 }
 
 ::selection {

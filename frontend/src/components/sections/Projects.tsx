@@ -11,7 +11,7 @@ const linkClass =
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="flex flex-col rounded-lg border border-line bg-paper p-6 transition-colors hover:border-faint md:p-7">
+    <article className="flex flex-col rounded-lg border border-line bg-paper p-6 transition-[transform,border-color,box-shadow] duration-200 hover:-translate-y-0.5 hover:border-faint hover:shadow-[0_14px_34px_-16px_rgba(26,26,24,0.22)] md:p-7">
       <div className="flex items-start justify-between gap-4">
         <h3 className="text-lg font-semibold">{project.title}</h3>
         <span className="mt-1 flex shrink-0 gap-3 font-mono text-[0.65rem] uppercase tracking-[0.18em]">

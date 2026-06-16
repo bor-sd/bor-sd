@@ -11,7 +11,12 @@ type Props = {
 export function SectionHead({ number, kicker, title, intro, tone = "light" }: Props) {
   return (
     <div className="mb-12 md:mb-16">
-      <p className="font-mono text-xs uppercase tracking-[0.18em] text-accent">
+      <p
+        className={cn(
+          "font-mono text-xs uppercase tracking-[0.18em]",
+          tone === "dark" ? "text-accent" : "text-accent-strong"
+        )}
+      >
         {number} · {kicker}
       </p>
       <h2

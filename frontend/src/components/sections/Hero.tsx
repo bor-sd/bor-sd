@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { LogoMark } from "@/components/brand/Logo";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
@@ -10,7 +11,7 @@ export function Hero() {
       <Container className="grid w-full items-center gap-12 py-16 lg:grid-cols-[1.4fr_1fr]">
         <Reveal>
           <div className="stagger">
-            <p className="font-mono text-xs uppercase tracking-[0.18em] text-accent">
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-accent-strong">
               {site.location}
             </p>
             <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
@@ -46,10 +47,12 @@ export function Hero() {
               />
             </div>
           ) : (
-            <div className="flex aspect-square items-center justify-center rounded-lg border border-line bg-surface-2">
-              <span className="font-mono text-4xl tracking-[0.4em] text-faint">
-                {site.monogram}
-              </span>
+            <div className="relative flex aspect-square items-center justify-center overflow-hidden rounded-lg border border-line bg-surface-2">
+              <div
+                aria-hidden
+                className="absolute inset-0 opacity-70 [background:radial-gradient(circle_at_30%_22%,var(--color-surface),transparent_62%)]"
+              />
+              <LogoMark className="relative h-20 w-20" />
             </div>
           )}
         </Reveal>
