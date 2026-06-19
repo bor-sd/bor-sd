@@ -13,7 +13,7 @@ export function Skills() {
             number="04"
             kicker="skills"
             title="What I work with"
-            intro="The day-to-day toolkit — Python and TypeScript first, the rest as the job demands."
+            intro="The day-to-day toolkit: Python and TypeScript first, the rest as the job demands."
           />
           <div className="stagger grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {skillGroups.map((group) => (

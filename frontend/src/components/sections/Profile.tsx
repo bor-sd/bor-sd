@@ -12,7 +12,7 @@ export function Profile() {
             number="05"
             kicker="profile"
             title="Beyond the code"
-            intro="The person behind the commits — how I work, what fills the rest of the week, and a few things I rate."
+            intro="The person behind the commits: how I work, what fills the rest of the week, and a few things I rate."
           />
 
           <h3 className="font-mono text-xs uppercase tracking-[0.18em] text-faint">
@@ -27,7 +27,7 @@ export function Profile() {
                 />
                 <p className="text-sm leading-relaxed text-muted">
                   <span className="font-medium text-ink">{trait.name}</span>
-                  {" — "}
+                  {": "}
                   {trait.note}
                 </p>
               </li>

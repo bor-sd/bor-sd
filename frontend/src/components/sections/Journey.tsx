@@ -14,7 +14,7 @@ export function Journey() {
             number="03"
             kicker="journey"
             title="How I got here"
-            intro="School, work and sport in one timeline — from a primary-school gym to production AI systems."
+            intro="School, work and sport in one timeline, from a primary-school gym to production AI systems."
           />
           <ol className="stagger relative space-y-10 border-l border-line pl-8">
             {journey.map((item) => (

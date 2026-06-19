@@ -21,7 +21,7 @@ export function SectionHead({ number, kicker, title, intro, tone = "light" }: Pr
       </p>
       <h2
         className={cn(
-          "mt-3 text-2xl font-semibold tracking-tight md:text-[2rem]",
+          "mt-3 font-display text-2xl font-semibold tracking-tight md:text-[2rem]",
           tone === "dark" ? "text-paper" : "text-ink"
         )}
       >

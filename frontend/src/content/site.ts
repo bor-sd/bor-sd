@@ -73,7 +73,7 @@ export const now = {
     },
     {
       label: "Learning",
-      text: "Finishing my last year at ZRI after seven years — I've finally aged out. Started on Pascal way back, these days it's C++.",
+      text: "Finishing my last year at ZRI after seven years. I've finally aged out. Started on Pascal way back, these days it's C++.",
     },
     {
       label: "Training for",
@@ -160,7 +160,7 @@ export type Project = {
 // so cards only link out where something is publicly live (liveUrl).
 export const projects: Project[] = [
   {
-    title: "HolyShift — AI validation platform",
+    title: "HolyShift - AI validation platform",
     description:
       "I spent about ten months on the team that built HolyShift, an AI platform that tests product ideas against what real buyers are actually saying. I worked all over the stack: the agent pipelines, the Python services and the Next.js frontend.",
     tags: ["Agentic AI", "Python", "FastAPI", "Next.js"],
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "BizMatch AI — procurement automation",
+    title: "BizMatch AI - procurement automation",
     description:
       "One of my projects at Neoproject. It takes you from a rough software idea all the way to a finished RFI document: a short AI interview works out what you actually need, a set of agents research vendors at the same time, and you get a clean RFI PDF at the end.",
     tags: ["LangGraph", "FastAPI", "Next.js", "pgvector"],
@@ -178,7 +178,7 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "Stryde — AI activity renamer for Strava",
+    title: "Stryde - AI activity renamer for Strava",
     description:
       "A little side project. You hook up your Strava and it renames your activities for you, with an AI pipeline writing the names from your route, where you went and how the run actually went.",
     tags: ["Next.js", "FastAPI", "LangGraph", "PostgreSQL"],
@@ -195,7 +195,7 @@ export const projects: Project[] = [
     liveUrl: "https://vault.stryde-ai.com",
   },
   {
-    title: "Goslarstvo Demšar — workshop website",
+    title: "Goslarstvo Demšar - workshop website",
     description:
       "Still a work in progress. My family has made violins in Ljubljana for three generations, and I'm rebuilding their website, taking it from an old Joomla site to a proper bilingual Next.js app with a CMS and contact forms.",
     tags: ["Next.js", "TypeScript", "Sanity", "Supabase"],
@@ -204,7 +204,7 @@ export const projects: Project[] = [
     liveUrl: "https://goslarstvo-demsar-website.vercel.app",
   },
   {
-    title: "Odoo ERP — Hermes",
+    title: "Odoo ERP - Hermes",
     description:
       "I help out at Hermes (hbs.si), the biggest Odoo partner in Slovenia, whenever they need an extra pair of hands. I build custom Odoo modules and features for their clients.",
     tags: ["Odoo", "Python", "ERP"],
@@ -264,14 +264,14 @@ export const profile = {
     },
     {
       name: "Perfectionist",
-      note: "Unfinished work frustrates me — “good enough” is rarely good enough.",
+      note: "Unfinished work frustrates me, and “good enough” is rarely good enough.",
     },
   ],
   hobbies: [
     { name: "Basketball", note: "Training and games, up to 12 hours a week" },
     { name: "Running", note: "10k road runs and trails around home" },
     { name: "Gym & fitness", note: "Lifting, usually with friends" },
-    { name: "Photography", note: "Landscapes, streets and friends, all on my iPhone — see the gallery below" },
+    { name: "Photography", note: "Landscapes, streets and friends, all on my iPhone (see the gallery below)" },
     { name: "Skiing & mountains", note: "On skis since I was a kid; climbed Triglav" },
     { name: "Tech", note: "Hardware, tools, whatever's new gets my attention" },
   ],
@@ -316,11 +316,11 @@ export const basketball = {
     { label: "Club", value: "KK Ljubljana" },
     { label: "Jersey", value: "#24" },
     { label: "Position", value: "Wing" },
-    { label: "Previously", value: "KK Medvode · 2014–2023" },
+    { label: "Previously", value: "KK Medvode · 2014-2023" },
     { label: "School team", value: "Gimnazija Šentvid" },
   ],
   highlights: [
-    "Got to quarterfinals a few times over the last few years, but never managed to snag a medal — the competition is tough.",
+    "Got to quarterfinals a few times over the last few years, but never managed to snag a medal. The competition is tough.",
     "National champ with the school team in 2025 and 3x3 national champ in 2026."
   ],
 };
@@ -334,19 +334,19 @@ export type GalleryItem = {
 };
 
 export const gallery: GalleryItem[] = [
-  { caption: "TODO — game or training photo" },
-  { caption: "TODO — a build in progress" },
-  { caption: "TODO — from a run or a summit" },
-  { caption: "TODO — one of your own photographs" },
-  { caption: "TODO — add a photo" },
-  { caption: "TODO — add a photo" },
+  { caption: "TODO: game or training photo" },
+  { caption: "TODO: a build in progress" },
+  { caption: "TODO: from a run or a summit" },
+  { caption: "TODO: one of your own photographs" },
+  { caption: "TODO: add a photo" },
+  { caption: "TODO: add a photo" },
 ];
 
 /* ---------------------------------- Contact --------------------------------- */
 
 export const contact = {
   heading: "Say hi.",
-  text: "Working on something, got a question or an opportunity, or just want to talk basketball? Drop me a message. Nothing fancy, no forms — it lands straight in my inbox.",
+  text: "Working on something, got a question or an opportunity, or just want to talk basketball? Drop me a message. Nothing fancy, no forms, it lands straight in my inbox.",
 };
 
 export type Social = {

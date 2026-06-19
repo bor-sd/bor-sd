@@ -78,7 +78,7 @@ export function Projects() {
             number="02"
             kicker="projects"
             title="Things I've built"
-            intro="Real systems, not tutorials — full-stack apps with proper architecture, from database to deploy."
+            intro="Real systems, not tutorials. Full-stack apps with proper architecture, from database to deploy."
           />
           <div className="stagger grid gap-5 md:grid-cols-2">
             {projects.map((project) => (

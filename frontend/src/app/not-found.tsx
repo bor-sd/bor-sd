@@ -6,7 +6,7 @@ export default function NotFound() {
       <p className="font-mono text-xs uppercase tracking-[0.18em] text-accent">404</p>
       <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">Airball.</h1>
       <p className="max-w-sm text-muted">
-        That page doesn&apos;t exist — but the rest of the site is wide open under
+        That page doesn&apos;t exist, but the rest of the site is wide open under
         the basket.
       </p>
       <Button href="/">Back home</Button>

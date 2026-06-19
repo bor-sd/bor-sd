@@ -14,7 +14,7 @@ export function Hero() {
             <p className="font-mono text-xs uppercase tracking-[0.18em] text-accent-strong">
               {site.location}
             </p>
-            <h1 className="mt-6 text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
+            <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
               {hero.greeting}
               <span className="mt-2 block text-muted">{hero.headline}</span>
             </h1>

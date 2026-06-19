@@ -67,7 +67,7 @@ export function Nav() {
       >
         <a
           href="#top"
-          aria-label={`${site.name} — home`}
+          aria-label={`${site.name} - home`}
           className="transition-opacity hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
         >
           <Logo />
