@@ -30,6 +30,22 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`,
   },
   description: site.description,
+  keywords: site.keywords,
+  authors: [{ name: site.name, url: site.url }],
+  creator: site.name,
+  category: "technology",
+  alternates: { canonical: "/" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   verification: {
     google: "nPoB6_cE2w3fEAw-bUZR9XHvtswFYhG0GAO3xSztFmI",
   },

@@ -23,6 +23,19 @@ export const site = {
     "I'm Bor, a software engineer at Neoproject in Ljubljana. I build full-stack and AI apps with Python, FastAPI, Next.js and PostgreSQL. Right now I'm finishing Gimnazija Šentvid and starting at FRI (University of Ljubljana) this autumn.",
   // Canonical URL — the repo's live Vercel deployment. Swap to a custom domain later.
   url: "https://borskaledemsar.vercel.app",
+  keywords: [
+    "Bor Skale Demšar",
+    "software engineer Ljubljana",
+    "full-stack developer Slovenia",
+    "AI developer",
+    "agentic AI developer",
+    "Next.js developer",
+    "FastAPI developer",
+    "Python developer",
+    "TypeScript developer",
+    "FRI Ljubljana",
+    "web developer Slovenia",
+  ],
 };
 
 /* ---------------------------------- Hero ----------------------------------- */
