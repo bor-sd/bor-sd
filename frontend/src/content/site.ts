@@ -45,8 +45,7 @@ export const hero = {
   headline: "I build full-stack and AI apps.",
   subhead:
     "I'm a software engineer at Neoproject here in Ljubljana, and I'm still finishing high school at Gimnazija Šentvid before I start at FRI this autumn. I've been building real software for about two years now, mostly AI things with Python on the back end and Next.js on the front. When I'm not at my laptop, you'll usually find me on a basketball court or somewhere outdoors.",
-  // TODO: drop a square portrait at frontend/public/me.jpg and set this to "/me.jpg"
-  photo: null as string | null,
+  photo: "/me.jpg" as string | null,
   ctas: [
     { label: "See my work", href: "#projects", primary: true },
     { label: "Say hi", href: "#contact", primary: false },
@@ -347,12 +346,12 @@ export type GalleryItem = {
 };
 
 export const gallery: GalleryItem[] = [
-  { caption: "TODO: game or training photo" },
-  { caption: "TODO: a build in progress" },
-  { caption: "TODO: from a run or a summit" },
-  { caption: "TODO: one of your own photographs" },
-  { caption: "TODO: add a photo" },
-  { caption: "TODO: add a photo" },
+  { src: "/gallery/court.jpg", caption: "Club game with KK Ljubljana, somewhere in the middle of a play." },
+  { src: "/gallery/desk.jpg", caption: "Two laptops, one desk, building something on a winter afternoon." },
+  { src: "/gallery/triglav.jpg", caption: "Sunrise from the top of Triglav, a bit before six in the morning." },
+  { src: "/gallery/piran.jpg", caption: "Piran, long after everyone else had gone in." },
+  { src: "/gallery/lake.jpg", caption: "An alpine reservoir that turns absurdly turquoise in August." },
+  { src: "/gallery/trail.jpg", caption: "Fog in the woods on an early hike." },
 ];
 
 /* ---------------------------------- Contact --------------------------------- */
