@@ -20,7 +20,7 @@ export const site = {
   tagline:
     "Software engineer and student from Ljubljana, building full-stack and AI apps.",
   description:
-    "I'm Bor, a software engineer at Neoproject in Ljubljana. I build full-stack and AI apps with Python, FastAPI, Next.js and PostgreSQL. Right now I'm finishing Gimnazija Šentvid and starting at FRI (University of Ljubljana) this autumn.",
+    "I'm Bor, a software engineer at Neoproject in Ljubljana. I build full-stack and AI apps with Python, FastAPI, Next.js and PostgreSQL. I've just started computer science at FRI (University of Ljubljana) after finishing Gimnazija Šentvid.",
   // Canonical URL — the repo's live Vercel deployment. Swap to a custom domain later.
   url: "https://borskaledemsar.vercel.app",
   keywords: [
@@ -44,7 +44,7 @@ export const hero = {
   greeting: "Hi, I'm Bor.",
   headline: "I build full-stack and AI apps.",
   subhead:
-    "I'm a software engineer at Neoproject here in Ljubljana, and I'm still finishing high school at Gimnazija Šentvid before I start at FRI this autumn. I've been building real software for about two years now, mostly AI things with Python on the back end and Next.js on the front. When I'm not at my laptop, you'll usually find me on a basketball court or somewhere outdoors.",
+    "I'm a software engineer at Neoproject here in Ljubljana, and I've just started computer science at FRI after finishing Gimnazija Šentvid. I've been building real software for about two years now, mostly AI things with Python on the back end and Next.js on the front. When I'm not at my laptop, you'll usually find me on a basketball court or somewhere outdoors.",
   photo: "/me.jpg" as string | null,
   ctas: [
     { label: "See my work", href: "#projects", primary: true },
@@ -58,14 +58,14 @@ export const about = {
   paragraphs: [
     "I've been getting paid to build software since 2024. I started out freelancing, then did about ten months at HolyShift, and now I'm at Neoproject working on AI platforms and internal tools. That's where most of my time goes. I also give Hermes a hand with some Odoo work whenever they need it.",
     "Most of what I do sits somewhere between full-stack and AI. On a normal day that means Python and FastAPI on the back end, Next.js and TypeScript on the front, a Postgres database underneath, and usually some kind of AI agent in the middle. I care a lot more about software that actually works and gets used than about something that just looks good in a demo.",
-    "I grew up in Medvode, a small town just outside Ljubljana, and I'm wrapping up my last year at Gimnazija Šentvid. This autumn I'm off to FRI, the computer science faculty at the University of Ljubljana.",
+    "I grew up in Medvode, a small town just outside Ljubljana. I finished Gimnazija Šentvid this summer and I'm now starting at FRI, the computer science faculty at the University of Ljubljana.",
     "Away from the screen I play a lot of basketball, run, lift, ski and take photos. There's more on all of that further down if you're curious.",
   ],
   facts: [
     { label: "Role", value: "Software Engineer · Neoproject" },
     { label: "Also", value: "Odoo · Hermes (hbs.si)" },
-    { label: "School", value: "Gimnazija Šentvid, class of 2026" },
-    { label: "Next", value: "FRI · Univ. of Ljubljana, fall 2026" },
+    { label: "Studying", value: "Computer science · FRI, Univ. of Ljubljana" },
+    { label: "Before that", value: "Gimnazija Šentvid, class of 2026" },
     { label: "Based in", value: "Medvode · Ljubljana" },
     { label: "Focus", value: "Full-stack & agentic AI" },
     { label: "Languages", value: "SL · EN (C1) · DE (B1) · HR/SR" },
@@ -77,7 +77,7 @@ export const about = {
 // Your low-effort heartbeat: update these three lines now and then, push,
 // and the site feels alive. The date shows on the page.
 export const now = {
-  updatedAt: "June 2026",
+  updatedAt: "September 2026",
   items: [
     {
       label: "Working on",
@@ -85,11 +85,11 @@ export const now = {
     },
     {
       label: "Learning",
-      text: "Finishing my last year at ZRI after seven years. I've finally aged out. Started on Pascal way back, these days it's C++.",
+      text: "First year of computer science at FRI. Before that, seven years at ZRI, from Pascal to C++, so now I finally get the theory behind everything I've been building.",
     },
     {
       label: "Training for",
-      text: "Plenty of running, gym sessions with friends, and the odd hike or trail in the mountains near home now that it's basketball off-season.",
+      text: "Plenty of running, gym sessions with friends, and the odd hike or trail in the mountains near home.",
     },
   ],
 };
@@ -145,9 +145,9 @@ export const journey: JourneyItem[] = [
     text: "Joined Neoproject in Ljubljana to work on full-stack and AI projects, all while finishing school and my last season at ZRI.",
   },
   {
-    year: "Fall 2026",
+    year: "Sep 2026",
     title: "FRI · University of Ljubljana",
-    text: "Heading to FRI, the CS faculty at the University of Ljubljana, to get the theory side down after a couple of years of mostly just building things.",
+    text: "Started computer science at FRI, the CS faculty at the University of Ljubljana, to get the theory side down after a couple of years of mostly just building things.",
   },
 ];
 
@@ -172,6 +172,15 @@ export type Project = {
 // so cards only link out where something is publicly live (liveUrl).
 export const projects: Project[] = [
   {
+    title: "VictorHub - agents & workflow platform",
+    description:
+      "The main thing I work on at Neoproject. VictorHub is where a company's AI agents and automated workflows live: an engine that runs the workflows, hosted agents with their own tools and memory, a credential store, and connectors into customer systems like Odoo. It's multi-tenant, so partners run their own clients on it.",
+    tags: ["Agentic AI", "Python", "FastAPI", "Next.js", "PostgreSQL"],
+    kind: "team",
+    liveUrl: "https://hub.victoros.ai",
+    featured: true,
+  },
+  {
     title: "HolyShift - AI validation platform",
     description:
       "I spent about ten months on the team that built HolyShift, an AI platform that tests product ideas against what real buyers are actually saying. I worked all over the stack: the agent pipelines, the Python services and the Next.js frontend.",
@@ -179,6 +188,22 @@ export const projects: Project[] = [
     kind: "team",
     liveUrl: "https://www.holyshift.ai",
     featured: true,
+  },
+  {
+    title: "Goslarstvo Demšar - workshop website",
+    description:
+      "My family has made violins in Ljubljana for three generations. I took their site off an old Joomla install and rebuilt it as a Next.js app in three languages, with a CMS behind it, a gallery and contact forms. Live since summer 2026.",
+    tags: ["Next.js", "TypeScript", "Sanity", "Supabase"],
+    kind: "solo",
+    liveUrl: "https://demsarvioline.si",
+  },
+  {
+    title: "Odoo ERP - Hermes",
+    description:
+      "I help out at Hermes (hbs.si), the biggest Odoo partner in Slovenia, whenever they need an extra pair of hands. I build custom Odoo modules and features for their clients.",
+    tags: ["Odoo", "Python", "ERP"],
+    kind: "team",
+    liveUrl: "https://www.hbs.si/en_US",
   },
   {
     title: "BizMatch AI - procurement automation",
@@ -195,33 +220,7 @@ export const projects: Project[] = [
       "A little side project. You hook up your Strava and it renames your activities for you, with an AI pipeline writing the names from your route, where you went and how the run actually went.",
     tags: ["Next.js", "FastAPI", "LangGraph", "PostgreSQL"],
     kind: "solo",
-    featured: true,
     maintenance: true,
-  },
-  {
-    title: "AI Prompt Vault",
-    description:
-      "Somewhere to save and organise your AI prompts, with categories, tags, favourites and search. It also generates new prompts using frameworks like CO-STAR, RISEN and CRAFT, scores them and helps you make them better.",
-    tags: ["Next.js", "FastAPI", "LangGraph", "PostgreSQL"],
-    kind: "solo",
-    liveUrl: "https://vault.stryde-ai.com",
-  },
-  {
-    title: "Goslarstvo Demšar - workshop website",
-    description:
-      "Still a work in progress. My family has made violins in Ljubljana for three generations, and I'm rebuilding their website, taking it from an old Joomla site to a proper bilingual Next.js app with a CMS and contact forms.",
-    tags: ["Next.js", "TypeScript", "Sanity", "Supabase"],
-    kind: "solo",
-    wip: true,
-    liveUrl: "https://goslarstvo-demsar-website.vercel.app",
-  },
-  {
-    title: "Odoo ERP - Hermes",
-    description:
-      "I help out at Hermes (hbs.si), the biggest Odoo partner in Slovenia, whenever they need an extra pair of hands. I build custom Odoo modules and features for their clients.",
-    tags: ["Odoo", "Python", "ERP"],
-    kind: "team",
-    liveUrl: "https://www.hbs.si/en_US",
   },
 ];
 
@@ -321,7 +320,7 @@ export const profile = {
 export const basketball = {
   paragraphs: [
     "I've been playing basketball since 2014. I started out at KK Medvode, and since 2023 I've been with KK Ljubljana, playing in the top league for my age group. On top of the club season, I also play for Gimnazija Šentvid at the national school tournaments.",
-    "Balancing club basketball, the school team and a matura year doesn't really work without a lot of planning. I'll be bringing that same juggling act with me to FRI this autumn.",
+    "Balancing club basketball, the school team and a matura year didn't work without a lot of planning. I'm bringing the same juggling act with me to FRI.",
     "Sport has taught me a lot that carries straight over to work: showing up on the days you don't feel like it, trusting the people next to you, and making quick calls when there's no time to overthink. I try to bring the same thing to what I build.",
   ],
   facts: [
